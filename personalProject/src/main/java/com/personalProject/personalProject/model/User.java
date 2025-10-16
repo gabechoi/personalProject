@@ -12,4 +12,17 @@ public class User {
     @Column(name = "ID")
     private int id;
 
+    @Column(name = "NAME")
+    private String name;
+
+    @Column(name = "EMAIL")
+    private String email;
+
+    @Column(name = "USERNAME")
+    private String username;
+
+    @Column(name = "PASSWORD")
+    private String password;
+
+
 }
