@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Global dark theme variables and base styles */
+:root {
+  --bg-start: #0b1220;
+  --bg-end: #0e1a2b;
+  --surface: rgba(255, 255, 255, 0.04);
+  --text-primary: #cbd5e1; /* slate-300 */
+  --text-muted: #8aa0b6; /* slate-400 */
+  --primary-start: #60a5fa; /* blue-400 */
+  --primary-end: #22d3ee; /* cyan-400 */
+  --accent: #7dd3fc; /* sky-300 */
+  --border: rgba(148, 163, 184, 0.2);
+  --success: #22c55e;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  color: var(--text-primary);
+  background: radial-gradient(1200px 600px at 50% -100px, rgba(56, 189, 248, 0.15), transparent 60%),
+    linear-gradient(180deg, var(--bg-start), var(--bg-end));
+}
+
+a {
+  color: #9ecbff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}

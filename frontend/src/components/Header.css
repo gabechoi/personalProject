@@ -1,0 +1,52 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: saturate(150%) blur(8px);
+  background: linear-gradient(180deg, rgba(11, 18, 32, 0.8), rgba(11, 18, 32, 0.3));
+  border-bottom: 1px solid var(--border);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.brand {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  font-size: 1.15rem;
+  background: linear-gradient(90deg, var(--primary-start), var(--primary-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.login-link {
+  color: var(--text-primary);
+  opacity: 0.9;
+}
+
+.signup-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--primary-start), var(--primary-end));
+  color: #00131f;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(34, 211, 238, 0.25);
+}
+
+.signup-button:hover {
+  text-decoration: none;
+}
