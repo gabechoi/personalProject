@@ -2,6 +2,10 @@ main {
   padding-bottom: 64px;
 }
 
+.app-frame main {
+  min-height: calc(100vh - 64px);
+}
+
 .hero {
   text-align: center;
   padding: 96px 0 56px;
@@ -120,6 +124,115 @@ main {
   margin: 0;
   color: var(--text-muted);
   font-size: 0.95rem;
+}
+
+.applications {
+  margin-top: 32px;
+  padding-bottom: 48px;
+}
+
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.application-card {
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.application-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.application-company {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.application-meta {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.application-meta dt {
+  font-size: 0.75rem;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: rgba(203, 213, 225, 0.7);
+}
+
+.application-meta dd {
+  margin: 2px 0 0;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.badge {
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.badge-full {
+  background: rgba(34, 211, 238, 0.15);
+  color: #22d3ee;
+}
+
+.badge-part {
+  background: rgba(250, 204, 21, 0.18);
+  color: #facc15;
+}
+
+.empty-state {
+  border: 1px dashed rgba(148, 163, 184, 0.4);
+  border-radius: 16px;
+  padding: 48px 32px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03));
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+}
+
+.empty-state p {
+  margin: 0;
+  max-width: 460px;
+  color: var(--text-muted);
+}
+
+.empty-icon {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: linear-gradient(120deg, rgba(34, 211, 238, 0.25), rgba(56, 189, 248, 0.25));
+  font-size: 24px;
 }
 
 @media (max-width: 900px) {

@@ -1,0 +1,125 @@
+.job-form-shell {
+  padding: 64px 0 96px;
+}
+
+.job-form-wrapper {
+  display: grid;
+  gap: 32px;
+}
+
+.job-form-hero {
+  text-align: center;
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+}
+
+.small-title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.job-form {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(11, 18, 32, 0.4));
+  display: grid;
+  gap: 24px;
+}
+
+.form-group {
+  display: grid;
+  gap: 10px;
+}
+
+.form-group label,
+.group-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(226, 232, 240, 0.78);
+}
+
+.job-form input[type='text'],
+.job-form input[type='radio'],
+.job-form input[type='email'] {
+  font-family: inherit;
+}
+
+.job-form input {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(11, 18, 32, 0.6);
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.job-form input:focus {
+  outline: none;
+  border-color: rgba(96, 165, 250, 0.8);
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25);
+}
+
+.segment-control {
+  display: flex;
+  gap: 12px;
+  background: rgba(11, 18, 32, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 14px;
+  padding: 6px;
+}
+
+.segment-option {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: var(--text-muted);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.segment-option input {
+  display: none;
+}
+
+.segment-option.active {
+  background: linear-gradient(120deg, rgba(96, 165, 250, 0.35), rgba(34, 211, 238, 0.35));
+  color: #0b1624;
+  box-shadow: 0 8px 24px rgba(34, 211, 238, 0.15);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.form-actions .cta-secondary {
+  padding: 12px 18px;
+  border-radius: 12px;
+}
+
+.form-actions .cta-primary {
+  padding: 12px 20px;
+}
+
+@media (max-width: 700px) {
+  .job-form {
+    padding: 24px;
+  }
+
+  .segment-control {
+    flex-direction: column;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+}
+
